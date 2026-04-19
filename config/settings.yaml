@@ -1,0 +1,15 @@
+simulation:
+  steps: 3600
+  warmup_steps: 200
+  green_min: 10
+  green_max: 60
+  yellow_time: 3
+  all_red_time: 1
+  decision_interval: 5
+junction:
+  tls_id: B1
+controller:
+  mode: fuzzy
+output:
+  metrics_csv: data/processed/run_metrics.csv
+  step_csv: data/processed/step_log.csv

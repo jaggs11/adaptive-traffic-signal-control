@@ -1,0 +1,14 @@
+<routes>
+  <vType id="car" accel="1.0" decel="4.5" sigma="0.5" length="5" maxSpeed="25"/>
+
+  <!-- valid routes through center node B1 -->
+  <route id="r0" edges="A1B1 B1C1"/>
+  <route id="r1" edges="C1B1 B1A1"/>
+  <route id="r2" edges="B0B1 B1B2"/>
+  <route id="r3" edges="B2B1 B1B0"/>
+
+  <flow id="f0" type="car" route="r0" begin="0" end="3600" vehsPerHour="500"/>
+  <flow id="f1" type="car" route="r1" begin="0" end="3600" vehsPerHour="500"/>
+  <flow id="f2" type="car" route="r2" begin="0" end="3600" vehsPerHour="600"/>
+  <flow id="f3" type="car" route="r3" begin="0" end="3600" vehsPerHour="600"/>
+</routes>
